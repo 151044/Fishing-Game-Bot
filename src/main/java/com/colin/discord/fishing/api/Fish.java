@@ -41,4 +41,8 @@ public class Fish {
     public double getMultiplier() {
         return multiplier;
     }
+
+    public String getDesc() {
+        return desc;
+    }
 }

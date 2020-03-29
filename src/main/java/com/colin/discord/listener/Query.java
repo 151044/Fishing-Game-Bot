@@ -45,9 +45,9 @@ public class Query implements Command {
             }
         }else if(toQuery.equals("fish")){
             if(args.size() == 1){
-                Commands.sendMessage(txt,EmbedFactory.from("All fishes", Fishes.getAll().stream().map(f -> "**" + f.getName() + "**---\nMinimum level:" + f.minLevel() + "\nWeight" + f.getWeight() + "\nMultiplier:" + f.getMultiplier() + "\n").collect(Collectors.joining())));
+                Commands.sendMessage(txt,EmbedFactory.from("All fishes", Fishes.getAll().stream().map(f -> "**" + f.getName() + "**---\nMinimum level:" + f.minLevel() + "\nWeight" + f.getWeight() + "\nMultiplier:" + f.getMultiplier() + "\n" + "Description:" + f.getDesc() + "\n").collect(Collectors.joining())));
             }else{
-                String s = Fishes.byName(args.get(1)).map(f -> "**" + f.getName() + "**---\nMinimum level:" + f.minLevel() + "\nWeight" + f.getWeight() + "\nMultiplier:" + f.getMultiplier() + "\n").orElse("Cannot find this fish.");
+                String s = Fishes.byName(args.get(1)).map(f -> "**" + f.getName() + "**---\nMinimum level:" + f.minLevel() + "\nWeight" + f.getWeight() + "\nMultiplier:" + f.getMultiplier() + "\n" + "Description:" + f.getDesc() + "\n").orElse("Cannot find this fish.");
                 Commands.sendMessage(txt,EmbedFactory.from("Fish Database",s));
             }
         }
