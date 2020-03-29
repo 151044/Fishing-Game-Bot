@@ -14,5 +14,6 @@ public class Shop implements Command {
     @Override
     public void action(TextChannel txt, boolean isPm, List<String> args, User u, List<User> mentions) {
 
+        Commands.sendMessage(txt,EmbedFactory.from("Shop","**Equipment Shop**"));
     }
 }

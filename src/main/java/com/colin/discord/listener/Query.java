@@ -41,7 +41,7 @@ public class Query implements Command {
                 Commands.sendMessage(txt,EmbedFactory.from("Experience chart", out.toString()));
             }else{
                 long xp = Experience.getXp(u.getIdLong());
-                Commands.sendMessage(txt,EmbedFactory.from("Experience",u.getAsMention() + "---" + Experience.getXp(u.getIdLong()) + " (Level " + Experience.getLevel(u.getIdLong()) + ")"));
+                Commands.sendMessage(txt,EmbedFactory.from("Experience",men.get(0).getAsMention() + "---" + Experience.getXp(u.getIdLong()) + " (Level " + Experience.getLevel(u.getIdLong()) + ")"));
             }
         }else if(toQuery.equals("fish")){
             if(args.size() == 1){

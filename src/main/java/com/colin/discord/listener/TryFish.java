@@ -35,7 +35,7 @@ public class TryFish implements Command {
                 Commands.sendMessage(txt,"Level up to " + Experience.getLevel(u.getIdLong()));
             }
         }else{
-            Commands.sendMessage(txt,"Failed to catch *" + f.getName() + "*. Better luck next time!");
+            Commands.sendMessage(txt,"Failed to catch **" + f.getName() + "**. Better luck next time!");
         }
     }
 }
