@@ -34,7 +34,7 @@ public class Experience {
             }
             i++;
         }
-        if((before + add) > exceed.get(i)){
+        if((before + add) >= exceed.get(i)){
             return true;
         }
         return false;
