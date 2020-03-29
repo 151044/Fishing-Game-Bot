@@ -32,6 +32,7 @@ public class Experience {
         for(int i = 1 ; i < MAX_LEVEL; i++){
             exceed.add(new BigDecimal(Math.pow(1.7,i)).add(new BigDecimal(3)).round(new MathContext(3)).longValue());
         }
+        write();
     }
     public static boolean addXp(long id,long add){
         if(!xp.containsKey(id)){
