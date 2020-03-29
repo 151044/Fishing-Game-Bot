@@ -1,3 +1,3 @@
 #name=lowest,range,multiplier,weight,desc
-Carp=0,970,1.0,6,A common fish, found almost everywhere and is absurdly easy to catch.
+Carp=0,970,1.0,6,A common fish which is found almost everywhere and is absurdly easy to catch.
 Herring=0,880,1.0,4,A variety of fish which is considered a delicacy around the world.
